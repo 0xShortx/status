@@ -8,6 +8,7 @@ jobs:
   summary:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Upptime
         uses: upptime/uptime-monitor@master
         env:
