@@ -1,0 +1,31 @@
+owner: 0xShortx
+repo: status
+userAgent: 0xShortx-status
+
+sites:
+  - name: Matproof Website
+    url: https://matproof.com
+  - name: Matproof App
+    url: https://app.matproof.com
+  - name: Matproof API
+    url: https://api.matproof.com/health
+  - name: Matproof Portal
+    url: https://portal.matproof.com
+
+status-website:
+  cname: status.matproof.com
+  name: Matproof Status
+  description: Live status for all Matproof services
+  theme: light
+  navbar:
+    - title: Website
+      href: https://matproof.com
+
+assignees:
+  - 0xShortx
+
+commit-messages:
+  readmeContent: "📊 Update status"
+  summaryJson: "📊 Update summary"
+  statusChange: "🔴 $SITE is $STATUS"
+  graphsUpdate: "📈 Update graphs"

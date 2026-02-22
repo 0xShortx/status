@@ -1,0 +1,21 @@
+name: Uptime CI
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 * * * *"
+  repository_dispatch:
+    types: [trigger_job]
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+jobs:
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upptime
+        uses: upptime/uptime-monitor@master
+        with:
+          UPPTIME_GH_PAT: ${{ secrets.GH_PAT }}

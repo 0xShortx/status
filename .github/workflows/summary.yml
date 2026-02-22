@@ -1,0 +1,15 @@
+name: Summary CI
+on:
+  schedule:
+    - cron: "0 0 * * *"
+permissions:
+  contents: write
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upptime
+        uses: upptime/uptime-monitor@master
+        with:
+          UPPTIME_GH_PAT: ${{ secrets.GH_PAT }}
+          UPDATE_SUMMARY: true
