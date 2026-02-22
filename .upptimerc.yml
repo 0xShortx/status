@@ -8,7 +8,7 @@ sites:
   - name: Matproof App
     url: https://app.matproof.com
   - name: Matproof API
-    url: https://api.matproof.com/health
+    url: https://api.matproof.com/v1/health
   - name: Matproof Portal
     url: https://portal.matproof.com
 
