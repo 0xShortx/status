@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Upptime
         uses: upptime/uptime-monitor@master
-        with:
-          UPPTIME_GH_PAT: ${{ secrets.GH_PAT }}
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           UPDATE_SUMMARY: true
